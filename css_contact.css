@@ -80,7 +80,14 @@ button {
 }
 
 .adresse {
-  flex: 1;
+  /*flex: 1;*/
+  
+  .adresse {
+  width: 40%;
+  background-color: white;
+  color: black;
+  font-size: 0.80em;
+}
 }
 
 .adresse p {
