@@ -1,0 +1,97 @@
+body {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  
+  background-color: #443961;
+}
+
+div {
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 50%;
+}
+
+.ecriture {
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ecriture div {
+  display: flex;
+}
+
+input, textarea {
+  background-color: #f4aaa1;
+}
+
+.message {
+  display: flex;
+  height: 25%;
+}
+
+.message textarea, .objet input {
+  width: 100%;
+}
+
+.bouton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 5%;
+}
+
+button {
+  font-weight: bold;
+  background-color: #f4aaa1;
+  width: 20%
+}
+
+.localisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+  width: 50%;
+}
+
+.coordo {
+  display: flex;
+  flex-direction: row;
+}
+
+.adresse, .logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.adresse {
+  flex: 1;
+}
+
+.adresse p {
+  margin: 5px;
+}
+
+.logo {
+  display:flex;
+  width: 15%;
+}
+
+.logo img {
+  background-color: yellow;
+}
