@@ -21,36 +21,55 @@
         </header>
 
         <main>
-            <section class="contact_message">
-                <p>Laissez-nous un message</p>
-                <form action="">
+            <form action="traitement.php" method="post">
+                <div class="contactez_nous"> 
+                    <p>Laissez-nous un message</p>
+                </div>
+                <div class="ecriture"> 
                     <div class="nom">
-
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" value="Votre nom">
                     </div>
-                    <div class="mail">
 
+                    <div class="email">
+                        <label for="email"></label>
+                        <input type="mail" id="email" name="user_email" value="Votre mail">
                     </div>
+
                     <div class="objet">
-
-                    </div>
-                    <div class="message">
-
+                        <label for="objet"></label>
+                        <input type="text" id="objet" name="user_objet" value="Objet du message">
                     </div>
 
-                </form>
+                    <div class="message">  
+                        <label for="message"></label>
+                        <textarea id="message" name="user_message">Tapez votre message ici</textarea>
+                    </div>
+
+                    <div class="bouton">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+    
+            <section class="localisation">
+                <div class="trouvez_nous"> 
+                    <p>Où nous trouver ?</p>
+                </div>
+                
+                <div class="coordo">
+                    <div class="logo">
+                        <img src="https://www.capitainestudy.fr/wp-content/uploads/2019/02/cesi_RVB.png">
+                    </div>
+                    <div class="adresse"> 
+                        <p>CESI</p>
+                        <p>230 rue Rolland Garros</p>
+                        <p>29480 Guipavas</p>
+                        <a href="https://brest.cesi.fr/">CESI Brest</a>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1K26ZFy1FHb_nfA7m-ERMWL-t4cxed-g&ehbc=2E312F" width="640" height="480"></iframe>
             </section>
-            <section class="contact_localisation">
-                <p>Où nous trouver ?</p>
-                <div class="contact_adresse">
-                    <p>CESI</p>
-                    <p>230 rue Rolland Garros</p>
-                    <p>29490 Guipavas</p>
-                    <a href="site cesi">site web du CESI</a>
-                </div>
-                <div class="insert_gmaps">
-                    <a href="localisation"></a>
-                </div>
-            </section>            
         </main>
 
 
