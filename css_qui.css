@@ -1,0 +1,27 @@
+/*page CSS pour le body de la page QUI NOUS SOMMES*/ 
+
+
+  
+.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .bureau h2, .membres h2 {
+  text-align: left;
+  color: #FFFFFF;
+  width: 100%;
+  }
+  
+  .img {
+    float: left;
+    margin-right: 10em;
+  }
+  
+  .img {
+  background-color:#443961;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
