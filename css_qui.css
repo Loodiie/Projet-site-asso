@@ -1,27 +1,77 @@
-/*page CSS pour le body de la page QUI NOUS SOMMES*/ 
-
-
+header {
+  background-color: #00091A;
+  color: #F4AAA1;
+  }
+      nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    nav ul li {
+      flex: 1;
+      text-align: center;
+    }
+    
+    nav ul li a {
+    color: #F4AAA1;
+    }
+    
   
-.vertical {
+    nav ul li.logo {
+      flex: 0.5;
+      text-align: center;
+    }
+    
+    nav ul li.logo img {
+      width: 110%;
+    }
+    
+  .vertical {
     display: flex;
     flex-flow: column nowrap;
   }
   
   .bureau h2, .membres h2 {
   text-align: left;
-  color: #FFFFFF;
   width: 100%;
   }
-  
-  .img {
-    float: left;
-    margin-right: 10em;
+
+  .trois_blocks {
+    justify-content: center;
+    display: flex;
+  }
+
+  .trois_blocks_couleur {
+    justify-content: center;
+    display: flex;
+    background-color: #443961;
   }
   
-  .img {
-  background-color:#443961;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  
+  .image_qui_bureau {
+    margin: auto;
+    background-color: #443961;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
+  .image_qui_membre {
+    margin: auto;
+    background-color: #443961;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    
+    footer {
+  background-color: #00091A;
+  color: #F4AAA1;
+  }
+    
+  
+    
+    
