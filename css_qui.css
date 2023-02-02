@@ -28,7 +28,7 @@ header {
     nav ul li.logo img {
       width: 110%;
     }
-    
+  
   .vertical {
     display: flex;
     flex-flow: column nowrap;
