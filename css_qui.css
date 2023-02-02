@@ -1,35 +1,4 @@
-header {
-  background-color: #00091A;
-  color: #F4AAA1;
-  }
-      nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-    }
-    
-    nav ul li {
-      flex: 1;
-      text-align: center;
-    }
-    
-    nav ul li a {
-    color: #F4AAA1;
-    }
-    
-  
-    nav ul li.logo {
-      flex: 0.5;
-      text-align: center;
-    }
-    
-    nav ul li.logo img {
-      width: 110%;
-    }
-  
-  .vertical {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
   }
@@ -48,6 +17,8 @@ header {
     justify-content: center;
     display: flex;
     background-color: #443961;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
   
@@ -66,12 +37,19 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .image_qui_bureau img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image_qui_membre img {
+    width: 250px;
+    height: 150px;
+
+  }
     
     footer {
   background-color: #00091A;
   color: #F4AAA1;
   }
-    
-  
-    
-    
