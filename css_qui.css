@@ -1,12 +1,19 @@
-.vertical {
+
+  .vertical {
     display: flex;
     flex-flow: column nowrap;
   }
-  
-  .bureau h2, .membres h2 {
-  text-align: left;
-  width: 100%;
-  }
+
+
+.bureau h2, .membres h2 { 
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    width: 30%;
+    background-color: rgba(68, 57, 97, 0.75);
+}
 
   .trois_blocks {
     justify-content: center;
@@ -17,13 +24,15 @@
     justify-content: center;
     display: flex;
     background-color: #443961;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3.125em;
+    margin-right: 3.125em;
   }
   
   
   .image_qui_bureau {
-    margin: auto;
+    margin-left: 3.125em;
+    margin-right: 3.125em;
+    padding: 1em;
     background-color: #443961;
     color: white;
     flex-direction: row;
@@ -39,13 +48,13 @@
   }
 
   .image_qui_bureau img {
-    width: 150px;
-    height: 150px;
+    width: 9.375em;
+    height: 9.375em;
   }
 
   .image_qui_membre img {
-    width: 250px;
-    height: 150px;
+    width: 15.625em;
+    height: 6.875em;
 
   }
     
@@ -53,3 +62,7 @@
   background-color: #00091A;
   color: #F4AAA1;
   }
+    
+  
+    
+    
