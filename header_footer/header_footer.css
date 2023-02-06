@@ -108,11 +108,11 @@ footer nav {
 }
 
 @media (max-width: 1000px) {
-    .nav_ordi {
-      display: none;
-    }
+  .nav_ordi {
+    display: none;
+  }
 
-    .logo {
+  .logo {
     width: 30%;
     left: 35%;
   }
