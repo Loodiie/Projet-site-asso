@@ -1,2 +1,7 @@
 # Projet-site-asso
-Code de création d'un site web pour le clun de robotique du CESI.
+
+Création d'un site web pour l'association de robotique du CESI
+
+Projet collaboratif (groupe de 3)
+
+Langages HTML, CSS, JS, PHP - Thème "cyberpunk"
