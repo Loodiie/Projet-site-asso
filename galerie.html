@@ -1,10 +1,208 @@
-<!--Page GALERIE-->
-
-<!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="css_header_footer.css"> 
+        <link rel="stylesheet" href="css_header_footer.css">
+        <link rel="stylesheet" href="css_galerie.css">
     </head>
 
+    <body>
+        <header>
+            <nav class="style_page">
+                <ul>
+                    <li><a href="home">Accueil</a></li>
+                    <li><a href="qui">Qui sommes nous ?</a></li>
+                    <li><a href="activites">Activités</a></li>
+                    <li class="logo"><img src="img/logocto_final.png" alt="Logo"></li>
+                    <li><a href="projets">Projets</a></li>
+                    <li><a href="news">Actualités</a></li>
+                    <li><a href="gallerie">Galerie</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
+            <section class="vertical"> 
+            <!-- Barre des filtres -->
+            <nav class="choix_filtres">
+                <ul class="filtre.galerie">
+                    <li class="style_filtre"><a href="filtres">Filtre 3D</a></li>
+                    <li class="style_filtre"><a href="filtres">Filtre projets</a></li>
+                    <li class="style_filtre"><a href="filtres">Filtres concours</a></li>
+                    <li class="style_filtre"><a href="filtres">Filtres...</a></li>
+                </ul>
+            </nav>
+            </section> 
+
+
+            <div class="carrousel_principal">
+              <a class="principal_carrousel-prev" onclick="plusSlides(-1, 'slide_images_principal', 0)">&#10094;</a>
+                <div class="slide_carrousel_principal">
+                  <div class="slide_images_principal">
+                    <img src="img/image_carrousel.png" alt="image 1">
+                  </div>
+                  <div class="slide_images_principal">
+                    <img src="img/image_carrousel2.png" alt="image 2">
+                  </div>
+                  <div class="slide_images_principal">
+                    <img src="img/image_carrousel3.png" alt="image 3">
+                  </div>
+                  <div class="slide_images_principal">
+                    <img src="img/image_carrousel4.png" alt="image 4">
+                  </div>
+                  <div class="slide_images_principal">
+                    <img src="img/image_carrousel5.png" alt="image 5">
+                  </div>
+                  <div class="slide_images_principal">
+                      <img src="img/image_carrousel6.png" alt="image 6">
+                  </div>
+                </div>
+                <a class="principal_carrousel-next" onclick="plusSlides(1, 'slide_images_principal', 0)">&#10095;</a>
+            </div>
+                
+                
+            <div class="trois_blocks">
+                
+                  <div class="carrousel_secondaire">
+                  <a class="carrousel_prev" onclick="plusSlides(-1, 'slide_images_secondaire_0', 0)">&#10094;</a>
+                  <div class="slide_carrousel_secondaire">
+                
+                    <div class="slide_images_secondaire_0">
+                      <img src="img/image_carrousel.png" alt="image 7" class="resize_img">
+                      <p> Nom de l'image 1</p>
+                   </div>
+                   <div class="slide_images_secondaire_0">
+                     <img src="img/image_carrousel2.png" alt="image 8" class="resize_img">
+                     <p> Nom de l'image 2</p>
+                   </div>
+                   <div class="slide_images_secondaire_0">
+                     <img src="img/image_carrousel3.png" alt="image 9" class="resize_img">
+                     <p> Nom de l'image 3</p>
+                   </div>
+                  </div>
+                  <a class="carrousel_next" onclick="plusSlides(1, 'slide_images_secondaire_0', 0)">&#10095;</a>
+                  </div>
+
+
+                  <div class="carrousel_secondaire">
+                    <a class="carrousel_prev" onclick="plusSlides(-1,  'slide_images_secondaire_1', 1)">&#10094;</a>
+                    <div class="slide_carrousel_secondaire">
+                      <div class="slide_images_secondaire_1">
+                        <img src="img/image_carrousel.png" alt="image 7" class="resize_img">
+                        <p> Nom de l'image 1</p>
+                     </div>
+                     <div class="slide_images_secondaire_1">
+                       <img src="img/image_carrousel2.png" alt="image 8" class="resize_img">
+                       <p> Nom de l'image 2</p>
+                     </div>
+                     <div class="slide_images_secondaire_1">
+                       <img src="img/image_carrousel3.png" alt="image 9" class="resize_img">
+                       <p> Nom de l'image 3</p>
+                     </div>
+                    </div>
+                    <a class="carrousel_next" onclick="plusSlides(1,  'slide_images_secondaire_1', 1)">&#10095;</a>
+                  </div>
+
+
+                  <div class="carrousel_secondaire">
+                    <a class="carrousel_prev" onclick="plusSlides(-1,  'slide_images_secondaire_2', 2)">&#10094;</a>
+                    <div class="slide_carrousel_secondaire">
+                      <div class="slide_images_secondaire_2">
+                        <img src="img/image_carrousel.png" alt="image 7" class="resize_img">
+                        <p> Nom de l'image 1</p>
+                     </div>
+                     <div class="slide_images_secondaire_2">
+                       <img src="img/image_carrousel2.png" alt="image 8" class="resize_img">
+                       <p> Nom de l'image 2</p>
+                     </div>
+                     <div class="slide_images_secondaire_2">
+                       <img src="img/image_carrousel3.png" alt="image 9" class="resize_img">
+                       <p> Nom de l'image 3</p>
+                     </div>
+                    </div>
+                    <a class="carrousel_next" onclick="plusSlides(1,  'slide_images_secondaire_2', 2)">&#10095;</a>
+                  </div>  
+            </div>
+
+            
+
+              <div class="trois_blocks">
+                  
+                <div class="carrousel_secondaire">
+                <a class="carrousel_prev" onclick="plusSlides(-1,  'slide_images_secondaire_3', 3)">&#10094;</a>
+                <div class="slide_carrousel_secondaire">
+              
+                  <div class="slide_images_secondaire_3">
+                    <img src="img/image_carrousel4.png" alt="image 10" class="resize_img">
+                    <p> Nom de l'image 1</p>
+                </div>
+                <div class="slide_images_secondaire_3">
+                  <img src="img/image_carrousel5.png" alt="image 11" class="resize_img">
+                  <p> Nom de l'image 2</p>
+                </div>
+                <div class="slide_images_secondaire_3">
+                  <img src="img/image_carrousel6.png" alt="image 12" class="resize_img">
+                  <p> Nom de l'image 3</p>
+                </div>
+                </div>
+                <a class="carrousel_next" onclick="plusSlides(1,  'slide_images_secondaire_3', 3)">&#10095;</a>
+                </div>
+
+
+                <div class="carrousel_secondaire">
+                  <a class="carrousel_prev" onclick="plusSlides(-1,  'slide_images_secondaire_4', 4)">&#10094;</a>
+                  <div class="slide_carrousel_secondaire">
+                    <div class="slide_images_secondaire_4">
+                      <img src="img/image_carrousel4.png" alt="image 10" class="resize_img">
+                      <p> Nom de l'image 1</p>
+                  </div>
+                  <div class="slide_images_secondaire_4">
+                    <img src="img/image_carrousel5.png" alt="image 11" class="resize_img">
+                    <p> Nom de l'image 2</p>
+                  </div>
+                  <div class="slide_images_secondaire_4">
+                    <img src="img/image_carrousel6.png" alt="image 12" class="resize_img">
+                    <p> Nom de l'image 3</p>
+                  </div>
+                  </div>
+                  <a class="carrousel_next" onclick="plusSlides(1,  'slide_images_secondaire_4', 4)">&#10095;</a>
+                </div>
+
+
+                <div class="carrousel_secondaire">
+                  <a class="carrousel_prev" onclick="plusSlides(-1,  'slide_images_secondaire_5', 5)">&#10094;</a>
+                  <div class="slide_carrousel_secondaire">
+                    <div class="slide_images_secondaire_5">
+                      <img src="img/image_carrousel4.png" alt="image 10" class="resize_img">
+                      <p> Nom de l'image 1</p>
+                  </div>
+                  <div class="slide_images_secondaire_5">
+                    <img src="img/image_carrousel5.png" alt="image 11" class="resize_img">
+                    <p> Nom de l'image 2</p>
+                  </div>
+                  <div class="slide_images_secondaire_5">
+                    <img src="img/image_carrousel6.png" alt="image 12" class="resize_img">
+                    <p> Nom de l'image 3</p>
+                  </div>
+                  </div>
+                  <a class="carrousel_next" onclick="plusSlides(1,  'slide_images_secondaire_5', 5)">&#10095;</a>
+                </div>  
+              </div>
+
+
+
+        </main>
+
+
+        <footer>
+            <nav class="style_page">
+                <ul>
+                    <li> <a href="contact">Contact</a></li>
+                    <li> <a href="partenaires">Partenaires</a></li>
+                    <li> <a href="mention">Mention légale</a></li>
+                    <li> <a href="contact">Contact</a></li>
+                    <li> <a href="charte">Charte</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="js_galerie.js"></script>
+    </body>
 </html>
