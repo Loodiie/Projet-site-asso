@@ -1,0 +1,25 @@
+/*Fichier CSS pour le body*/
+
+body{
+    margin: 0;
+}
+
+h1{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+  
+h2{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+h3{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
