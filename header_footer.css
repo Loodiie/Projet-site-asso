@@ -34,34 +34,10 @@ header {
   }
   
   
-  body{
-    background-color:#00091A;
-    background-image: url("img/background_img.png");
-    color: #FFFFFF;
-  }
-  
   footer {
     background-color: #00091A;
     font-family: Helvetica, sans-serif;
   
   }
   
-  p{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  h1{
-    color: #F4AAA1;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  h2{
-    color: white;
-    font-family: Helvetica, sans-serif;
-  }
-
-  h3{
-    color: white;
-    font-family: Helvetica, sans-serif;
-  }
+ 
