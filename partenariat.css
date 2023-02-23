@@ -1,14 +1,11 @@
 /*code css pour page Parrainage/partenariat*/
-body{
-    margin: 0;
-}
 
 .vertical {
     display:flex;
     flex-flow: column nowrap;
 }
 
-.title h2 {
+.title h1 {
         display: block;
         margin: auto;
         margin-top: 2em;
@@ -53,7 +50,7 @@ body{
     padding: auto;
 }
 
-.text h3 {
+.text h2 {
     text-align: center;
 }
 
@@ -61,14 +58,3 @@ body{
     width: 95%;
     padding-left: 1em;
 }
-
-/*#parrain{
-    width: 100%;
-    background-color:rgb(68,57,97);
-    display: block;
-    content: center;
-    margin: auto;
-    margin-top: 1em;
-    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
-    padding: 0.5%;
-}*/
