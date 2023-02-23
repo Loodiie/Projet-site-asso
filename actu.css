@@ -1,0 +1,82 @@
+.vertical {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.title h1 {
+        display: block;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+        width: 40%;
+        background-color: rgba(68, 57, 97, 0.90);
+        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.horizontal{
+    display:flex;
+    flex-flow: row nowrap;
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+.horizontal img {
+    width: 30em;
+    height: 20em;
+}
+
+.articles {
+    display:flex;
+    flex-flow: column nowrap;
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    margin-bottom: 3em;
+}
+
+.article1{
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 0.5%;
+}
+
+.article2{
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 0.5%;
+}
+
+.pics1{
+    width: 100%;
+    padding: auto;
+}
+
+.text h2 {
+    text-align: center;
+}
+
+.text {
+    width: 95%;
+    padding-left: 1em;
+}
+   
+.class_bouton {
+    margin-top: 5em;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: flex-end;
+}
+    
+a {
+    text-decoration: none;
+    color: white;
+  }  
+
+
+    
+    
