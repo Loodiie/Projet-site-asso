@@ -27,70 +27,6 @@
       display: inline-block;
       list-style-type: none;
     }
-    /*.carrousel_principal {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 500px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .principal_carrousel-prev,
-    .principal_carrousel-next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    .principal_carrousel-next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    .principal_carrousel-prev:hover,
-    .principal_carrousel-next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    .slide_carrousel_principal {
-      height: 500px;
-      transition: 0.6s ease;
-    }
-    
-    .slide_images_principal {
-      width: 100%;
-      height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .trois_blocks_couleur {
-      justify-content: center;
-      display: flex;
-      background-color: #443961;
-      margin-left: 3.125em;
-      margin-right: 3.125em;
-    }
-
-
-    .imaslide_images_secondaire {
-      margin: auto;
-      background-color: #443961;
-      color: white;
-      flex-direction: row;
-      justify-content: space-between;
-    }*/
 
     .carrousel_principal{
       display: flex;
@@ -104,7 +40,10 @@
       cursor: pointer;
       font-weight: bold;
       font-size: 18px;
+      color: white;
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5); 
     }
+
 
     .trois_blocks{
       display: flex;
@@ -121,6 +60,7 @@
     .slide_images_secondaire_4,
     .slide_images_secondaire_5{
       background-color: #443961;
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -143,4 +83,6 @@
       cursor: pointer;
       font-weight: bold;
       font-size: 18px;
+      color: white;
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     }

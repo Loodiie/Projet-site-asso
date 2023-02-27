@@ -37,6 +37,11 @@
     margin-bottom: 3em;
 }
 
+.articles img {
+    width: 20em;
+    height: 15em;
+}
+
 .article1{
     display:flex;
     flex-flow: row nowrap;
@@ -63,19 +68,20 @@
     padding-left: 1em;
 }
    
-.class_bouton {
-    margin-top: 5em;
-    margin-left: auto;
-    display: flex;
-    flex-flow: row nowrap;
-    display: flex;
-    justify-content: flex-end;
+.indivprojet img {
+    width: 1.5em;
+    height: 1.5em;
 }
-    
-a {
-    text-decoration: none;
-    color: white;
-  }  
+
+.indivprojet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 
     
