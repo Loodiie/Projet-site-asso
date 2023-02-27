@@ -1,6 +1,11 @@
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="header_footer.css">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        
+        <link rel="stylesheet" href="header_footer/header_footer.css"> 
+        <script src="header_anim.js" defer="defer"></script> 
+        <script src="https://kit.fontawesome.com/d93ad3eb56.js" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="galerie.css">
         <link rel="stylesheet" href="body.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,17 +14,99 @@
     </head>
 
     <body>
-        <header>
-            <nav class="style_page">
-                <ul>
-                    <li><a href="home">Accueil</a></li>
-                    <li><a href="qui">Qui sommes nous ?</a></li>
-                    <li><a href="activites">Activités</a></li>
-                    <li class="logo"><img src="img/logocto_final.png" alt="Logo"></li>
-                    <li><a href="projets">Projets</a></li>
-                    <li><a href="news">Actualités</a></li>
-                    <li><a href="gallerie">Galerie</a></li>
-                </ul>
+        <header class=""> 
+            <nav class="nav_ordi"> 
+                <section class="menu_gauche">
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Accueil</h1>
+                        </a>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Qui sommes-nous ?</h1>
+                        </a>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Activités</h1>
+                        </a>
+                    </div>
+                </section>
+                <section class="logo">
+                    <a href="#">
+                        <img src="header_footer/assets/logocto_final.png">
+                    </a>
+                </section>
+                <section class="menu_droite">
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Projets</h1>
+                        </a>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Actualités</h1>
+                        </a>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <a href="#">
+                            <h1>Galerie</h1>
+                        </a>
+                    </div>
+                </section>
+            </nav>
+        
+            <nav class="nav_tel"> 
+                <section class="menu_gauche">
+                    <div class="burger">
+                        <!-- class="menu_bouton" -->
+                        <input type="checkbox" /> <!-- A fake / hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
+                        
+                        
+                        <span></span> <!-- Some spans to act as a hamburger -->
+                        <span></span>
+                        <span></span>
+                        
+                        
+                        <ul class="menu_deroule">
+                            <div class="menu_bouton">
+                                <a href="#"><li>Accueil</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Qui sommes nous ?</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Activités</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Projets</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Galerie</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Contact</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Partenaires</li></a>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+                <section class="logo">
+                    <a href="#">
+                        <img src="header_footer/assets/logocto_final.png">
+                    </a>
+                </section>
+                <section class="menu_droite">
+                    <!-- class="loupe" -->
+                    <div class="loupe" class="menu_bouton">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </section>
             </nav>
         </header>
 
@@ -196,15 +283,41 @@
         </main>
 
 
-        <footer>
-            <nav class="style_page">
-                <ul>
-                    <li> <a href="contact">Contact</a></li>
-                    <li> <a href="partenaires">Partenaires</a></li>
-                    <li> <a href="mention">Mention légale</a></li>
-                    <li> <a href="contact">Contact</a></li>
-                    <li> <a href="charte">Charte</a></li>
-                </ul>
+        <footer> 
+            <nav class="nav_ordi"> 
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Contact</h1>
+                    </a>
+                </div>
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Partenaires</h1>
+                    </a>
+                </div>
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Charte</h1>
+                    </a>
+                </div>
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Mentions légales</h1>
+                    </a>
+                </div>
+            </nav>
+            
+            <nav class="nav_tel"> 
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Charte</h1>
+                    </a>
+                </div>
+                <div class="menu_bouton"> 
+                    <a href="#">
+                        <h1>Mentions légales</h1>
+                    </a>
+                </div>
             </nav>
         </footer>
         <script src="js_galerie.js"></script>
