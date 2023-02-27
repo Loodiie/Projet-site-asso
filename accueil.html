@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <link rel="stylesheet" href="header_footer.css"> 
+        <link rel="stylesheet" href="header_footer/header_footer.css"> 
         <link rel="stylesheet" href="body.css">
         <link rel="stylesheet" href="accueil.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,17 +11,86 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">  <!--pour la typo google font Raleway-->
     </head>
     <body>
-        <header>
-            <nav class="style_page">
-                <ul>
-                    <li><a href="home">Accueil</a></li>
-                    <li><a href="qui">Qui sommes nous ?</a></li>
-                    <li><a href="activites">Activités</a></li>
-                    <li class="logo"><img src="https://cdn.discordapp.com/attachments/1067014815874302006/1070007031773270066/logocto_final.png" alt="Logo"></li>
-                    <li><a href="projets">Projets</a></li>
-                    <li><a href="news">Actualités</a></li>
-                    <li><a href="gallerie">Galerie</a></li> 
-                </ul>
+        <header class=""> 
+            <nav class="nav_ordi"> 
+                <section class="menu_gauche">
+                    <div class="menu_bouton"> 
+                        <p>onglet 1</p>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <p>onglet 2</p>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <p>onglet 3</p>
+                    </div>
+                </section>
+                <div class="logo">
+                    <img src="assets/logocto_final.png">
+                </div>
+                <section class="menu_droite">
+                    <div class="menu_bouton"> 
+                        <p>onglet 1</p>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <p>onglet 2</p>
+                    </div>
+                    <div class="menu_bouton"> 
+                        <p>onglet 3</p>
+                    </div>
+                </section>
+            </nav>
+        
+            <nav class="nav_tel"> 
+                <!-- section class="menu_gauche">
+                    <div class="menu_bouton"> 
+                        <i class="fa-solid fa-bars"></i>
+                    </div -->
+                <nav class="menu_gauche">
+                    <div id="burger">
+                        <!-- class="menu_bouton" -->
+                        <input type="checkbox" /> <!-- A fake / hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
+                        
+                        
+                        <span></span> <!-- Some spans to act as a hamburger -->
+                        <span></span>
+                        <span></span>
+                        
+                        
+                        <ul id="menu">
+                            <div class="menu_bouton">
+                                <a href="#"><li>Accueil</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Qui sommes nous ?</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Activités</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Projets</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Galerie</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Contact</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Partenaires</li></a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /section -->
+                <div class="logo">
+                    <img src="assets/logocto_final.png">
+                </div>
+                <section class="menu_droite">
+                    <!-- class="loupe" -->
+                    <div class="menu_bouton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </section>
             </nav>
         </header>
 
@@ -78,17 +147,30 @@
                 <!-- CARROUSSEL d'images -->
             </section>
         </main>
-       
 
-
-        <footer>
-            <nav class="style_page">
-                <ul>
-                    <li> <a href="contact">Contact</a></li>
-                    <li> <a href="partenaires">Partenaires</a></li>
-                    <li> <a href="mention">Mentions légales</a></li>
-                    <li> <a href="charte">Charte</a></li>
-                </ul>
+        <footer> 
+            <nav class="nav_ordi"> 
+                <div class="menu_bouton"> 
+                    <p>onglet 1</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 2</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 3</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 4</p>
+                </div>
+            </nav>
+            
+            <nav class="nav_tel"> 
+                <div class="menu_bouton"> 
+                    <p>onglet 3</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 4</p>
+                </div>
             </nav>
         </footer>
     
