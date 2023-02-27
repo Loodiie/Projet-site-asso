@@ -9,68 +9,86 @@
 
     <body>
         <header class=""> 
-        
-        <nav class="nav_ordi"> 
-            <section class="menu_gauche">
-                <a href="#">
+            <nav class="nav_ordi"> 
+                <section class="menu_gauche">
                     <div class="menu_bouton"> 
-                        <h1>onglet 1</h1>
+                        <p>onglet 1</p>
                     </div>
-                </a>
-                <a href="#">
                     <div class="menu_bouton"> 
-                        <h1>onglet 2</h1>
+                        <p>onglet 2</p>
                     </div>
-                </a>
-                <a href="#">
                     <div class="menu_bouton"> 
-                        <h1>onglet 3</h1>
+                        <p>onglet 3</p>
                     </div>
-                </a>
-            </section>
-            <a href="#accueil">
+                </section>
                 <div class="logo">
                     <img src="assets/logocto_final.png">
                 </div>
-            </a>
-            <section class="menu_droite">
-                <a href="#">
+                <section class="menu_droite">
                     <div class="menu_bouton"> 
-                        <h1>onglet 1</h1>
+                        <p>onglet 1</p>
                     </div>
-                </a>
-                <a href="#">
                     <div class="menu_bouton"> 
-                        <h1>onglet 2</h1>
+                        <p>onglet 2</p>
                     </div>
-                </a>
-                <a href="#">
                     <div class="menu_bouton"> 
-                        <h1>onglet 3</h1>
+                        <p>onglet 3</p>
                     </div>
-                </a>
-            </section>
-        </nav>
-    
-        <nav class="nav_tel"> 
-            <section class="menu_gauche">
-                <a href="#">
+                </section>
+            </nav>
+        
+            <nav class="nav_tel"> 
+                <!-- section class="menu_gauche">
                     <div class="menu_bouton"> 
                         <i class="fa-solid fa-bars"></i>
+                    </div -->
+                <nav class="menu_gauche">
+                    <div id="burger">
+                        <!-- class="menu_bouton" -->
+                        <input type="checkbox" /> <!-- A fake / hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
+                        
+                        
+                        <span></span> <!-- Some spans to act as a hamburger -->
+                        <span></span>
+                        <span></span>
+                        
+                        
+                        <ul id="menu">
+                            <div class="menu_bouton">
+                                <a href="#"><li>Accueil</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Qui sommes nous ?</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Activités</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Projets</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Galerie</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Contact</li></a>
+                            </div>
+                            <div class="menu_bouton">
+                                <a href="#"><li>Partenaires</li></a>
+                            </div>
+                        </ul>
                     </div>
-                </a>
-            </section>
-            <div class="logo">
-                <img src="assets/logocto_final.png">
-            </div>
-            <section class="menu_droite">
-                <a href="#">
+                </nav>
+                <!-- /section -->
+                <div class="logo">
+                    <img src="assets/logocto_final.png">
+                </div>
+                <section class="menu_droite">
+                    <!-- class="loupe" -->
                     <div class="menu_bouton">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                </a>
-            </section>
-        </nav>
+                </section>
+            </nav>
         </header>
         
         <main> 
@@ -99,39 +117,27 @@
     
         <footer> 
             <nav class="nav_ordi"> 
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 1</h1>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 2</h1>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 3</h1>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 4</h1>
-                    </div>
-                </a>
+                <div class="menu_bouton"> 
+                    <p>onglet 1</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 2</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 3</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 4</p>
+                </div>
             </nav>
             
             <nav class="nav_tel"> 
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 3</h1>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="menu_bouton"> 
-                        <h1>onglet 4</h1>
-                    </div>
-                </a>
+                <div class="menu_bouton"> 
+                    <p>onglet 3</p>
+                </div>
+                <div class="menu_bouton"> 
+                    <p>onglet 4</p>
+                </div>
             </nav>
         </footer>
     
