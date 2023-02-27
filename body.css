@@ -1,7 +1,8 @@
 /*Fichier CSS pour le body*/
+html, body {height: 100%;}
 
 body{
-    margin: 0;
+    margin: 0; padding: 0;
     background-color:#00091A;
     background-image: url("img/background_img.png");
 
@@ -12,6 +13,8 @@ body{
     background-position: center;        /*l'image est centrée */
     background-size: cover;             /* l'image prend 100% de l'espace*/
 }
+
+main {flex: 1;}
 
 h1{
     color: white;
