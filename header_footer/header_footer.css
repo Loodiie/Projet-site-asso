@@ -1,78 +1,91 @@
-html, body {height: 100%}
+@media (max-width: 950px) {
+  .nav_ordi {display: none;}
+  /*.logo {width: 30%;left: 35%;}*/
+}
+@media (min-width: 950px){
+  .nav_tel {display: none;}
+  .logo {flex: 0.5;}
+}
 
+/*GENERAL*/
 body {
   display: flex;
   flex-direction: column;
-  margin: 0; padding: 0;
 }
 
-nav {
+header h1, footer h1 {
   color: #f4aaa1;
-  font-family: Helvetica, sans-serif;
   font-size: 1.2em; font-weight: 300;
 }
 
+a
+{
+  text-decoration: none;
+  color: #f4aaa1;
+}
+
+/*HEADER*/
 header {
   background-color: #00091a;
-  min-height: 100px;
+  /*height: 15%;*/
   
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   
   position: sticky;
-  /*position: fixed;*//*width: 100%;*//*left: 0; right: 0;*/ 
   top: 0;
   
   transition: top 0.3s;
   transition-delay: 0.2s;
 }
 
-header.hidden {top: -200px;}
+header.hidden {top: -20px;}
+
+header nav {
+  width: 100%; /*height: 100%;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+header section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex: 1;  
+}
 
 .logo {
   display: flex;
-  /*align-self: start;*/
-  width: 20%;
-  max-width: 230px; min-width: 61px;
-  max-height: 200px;
-
-  position: absolute;
-  left: 40%; top: 0;
-
   z-index: 3;
 }
 
-.logo img { 
+.logo img {   
   display: flex;
   width: 100%;
+  max-height: 200px;
 }
 
-header nav {
+.menu_bouton {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between; /*space-evenly OU space-between*/
-  
-  width: 100%;
-}
+  justify-content: center;
+  align-items: center;
 
-header nav section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-header .menu_bouton {
-  padding: 5px 40px;
-  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 .loupe {
   color: #f4aaa1;
-  font-weight: bold;
+  font-size: 1.8em;
+  z-index: 1;
 }
 
+
+
+/*FOOTER*/
 footer {background-color: #00091a;}
 
 footer nav {
@@ -81,6 +94,7 @@ footer nav {
   justify-content: space-evenly; 
 }
 
+/*Néon au survol (footer/header*/
 .menu_bouton :hover {
   text-shadow:
     0 0 6px rgba(228, 202, 217, 0.92),
@@ -91,21 +105,8 @@ footer nav {
     0 0 54px rgba(244,170,161,0.92);
 }
 
-@media (max-width: 1000px) {
-  .nav_ordi {display: none;}
-
-  .logo {width: 30%;left: 35%;}
-  
-  footer nav {justify-content: space-evenly;}
-}
-
-@media (min-width: 1000px){
-  .nav_tel {display: none;}
-}
-
-
-
-#burger
+/*Menu burger*/
+.burger
 {
   display: flex;
   flex-direction: column;
@@ -115,14 +116,7 @@ footer nav {
   z-index: 1; /*élèment au premier plan, arrière-plan, milieu plan, etc ... 0 background - 1, 2, 3 etc plus en plus haut*/
 }
 
-#burger a
-/*désactivation déco + changement couleur lien*/
-{
-  text-decoration: none;
-  color: #f4aaa1;
-}
-
-#burger input
+.burger input
 /*activation/désactivation menu avec boite à cocher (invisible)*/
 {
 /*taille et position boite à cocher*/
@@ -138,8 +132,8 @@ footer nav {
   z-index: 2; /*boite au premier plan pour tjrs etre accessible*/
 }
 
-/*Just a quick hamburger*/
-#burger span
+/*burger en 3 span*/
+.burger span
 {
   display: block;
   width: 33px; height: 4px;
@@ -159,48 +153,49 @@ footer nav {
     opacity 0.55s ease;
 }
 
-#burger span:first-child
+.burger span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#burger span:nth-last-child(2)
+.burger span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
 
-/*Transform all the slices of hamburger into a crossmark */
-#burger input:checked ~ span
+/*transformation du faux burger en croix*/
+.burger input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #f4aaa1;;
 }
 
-/*But let's hide the middle one*/
-#burger input:checked ~ span:nth-last-child(3)
+/*cache la tranche du milieu*/
+.burger input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*Ohyeah and the last one should go the other direction*/
-#burger input:checked ~ span:nth-last-child(2)
+/*flip la dernière tranche*/
+.burger input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*Make this absolute positioned at the top left of the screen*/
-#menu
+/*position absolu du menu caché (haut gauche)*/
+.menu_deroule
 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
   width: 100vw; /*100% pour prendre la moitié de l'écran (nav parent 50% écran)*/
 
   position: absolute;
-  margin: 60px 0 0 -50px;
-  padding: 30px 20px ; /*padding autour de la liste*/
+  margin: 0 0 0 -50px;
+  padding-bottom: 20px; padding-left: 50px; padding-top: 80px;
   
   background-color: rgba(0,9,26,0.7);
   list-style-type: none;
@@ -211,14 +206,16 @@ footer nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
+.menu_deroule li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.2em;
+
+  font-family: Helvetica, sans-serif;
 }
 
-/*And let's slide it in from the left*/
-#burger input:checked ~ ul
+/*ouverture menu par la gauche*/
+.burger input:checked ~ ul
 {
   transform: none;
 }
