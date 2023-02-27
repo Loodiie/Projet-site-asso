@@ -1,9 +1,5 @@
 /*page css pour les body de Accueil */
 
-body{
-    margin: 0;
-}
-
 .vertical {
     display:flex;
     flex-flow: column nowrap;
@@ -18,7 +14,28 @@ body{
     margin: 3% 0 3%;
 }
 
+#sponso{
+    justify-content: space-between;
+    width: 30%;
+}
+
 .zone_text {
     width: 95%;
     padding: 1em;
+}
+
+.sponsors{
+    display:flex;
+    flex-flow: row nowrap;
+    background-color: rgb(68,57,97,0.70);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 0.5% 30% 0.5% 30% ;
+    margin: 3% 0 3%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sponso img{
+    width: 8em;
 }
