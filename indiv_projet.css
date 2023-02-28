@@ -34,7 +34,15 @@ padding: 1em;
 .img_article {
 display: flex;
 flex-direction : column;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
 }
 
+.zone_img {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 950px) {
+    .zone_img {flex-wrap: wrap;}
+}
