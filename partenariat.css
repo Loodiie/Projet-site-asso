@@ -1,23 +1,18 @@
 /*code css pour page Parrainage/partenariat*/
-body{
-    margin: 0;
-}
 
 .vertical {
-    display:flex;
+    display: flex;
+    align-items: center;
     flex-flow: column nowrap;
+    background-color: rgba(68, 57, 97, 0.70);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 3em;
 }
 
 .title h1 {
-        display: block;
-        margin: auto;
-        margin-top: 2em;
-        margin-bottom: 1em;
-        text-align: center;
-        width: 40%;
-        background-color: rgba(68, 57, 97, 0.80);
-        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
-
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
 }
 
 #parrainage {
@@ -26,6 +21,8 @@ body{
     background-color: rgb(68,57,97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding: 0.5em;
+    width: 95%;
+    margin-bottom: 1em;
 }
 
 .img_parrain img{
@@ -38,6 +35,8 @@ body{
     background-color: rgb(68,57,97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding: 0.5em;
+    width: 95%;
+    margin-bottom: 1em;
 }
 
 .partnr1{

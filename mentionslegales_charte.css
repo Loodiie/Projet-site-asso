@@ -24,3 +24,12 @@
 .text {
     text-align: left;
 }
+
+@media (max-width: 500px) {
+    .vertical {
+    width: 95%;
+    }
+    .title {
+    width: 60%;
+    }
+}

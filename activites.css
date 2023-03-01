@@ -7,6 +7,8 @@
 .horizontal{
     display:flex;
     flex-flow: row nowrap;
+    justify-content: center;
+
 }
 
 .intro{
@@ -61,7 +63,6 @@
     margin-top: 3em;
     flex-direction: row;
     justify-content: space-between;
-    color: white;
     width: 30%;
     padding: 0.5%;
 }
@@ -83,39 +84,47 @@ p{
     text-align: center;
 }
 
-.bloc4{
+.bloc1_hide{
     background-color: #443961;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
     width: 30%;
     padding: 0.5%;
-    height: 1em;
 }
 
-.bloc5{
+.bloc2_hide{
     background-color: #443961;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
     width: 30%;
     padding: 0.5%;
-    height: 1em;
 }
 
-.bloc6{
+.bloc3_hide{
     background-color: #443961;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
-    color: white;
     width: 30%;
     padding: 0.5%;
-    height: 1em;
 }
 
-.ptitblocs:hover{
+.lireplus img{
+      width: 1.5em;
+      height: 1.5em;
+}
+
+.lireplus {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+/*.ptitblocs:hover{
     clip-path: inset(0);
     margin-top: auto;
     height: 100%;
-}
+}*/
