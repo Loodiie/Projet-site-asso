@@ -66,6 +66,13 @@ iframe {flex: 1;}
   font-family: 'Raleway', sans-serif;
 }
 
+.adresse a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 main .logo {
   max-width: 150px;
 }
