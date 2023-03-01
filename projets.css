@@ -1,4 +1,4 @@
-.choix_filtres {
+.choix_filtres_ordi {
     justify-content: flex-start;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
     margin: 1em;
 }
   
-.filtre.galerie {
+.filtre {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,9 +26,12 @@
     list-style-type: none;
 }
 
+
 .vertical {
     background-color: rgb(68,57,97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding-top: 1em;
+    margin-top: 1em;
 }
 
 .trois_blocks {
@@ -67,4 +70,103 @@ main a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* bouton filtre */
+.tel
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*width: 100%;*/
+  position: relative;
+  margin-left: 50px;
+  margin-top: 2em;
+  z-index: 1; /*élèment au premier plan, arrière-plan, milieu plan, etc ... 0 background - 1, 2, 3 etc plus en plus haut*/
+}
+
+.tel input
+/*activation/désactivation menu avec boite à cocher (invisible)*/
+{
+/*taille et position boite à cocher*/
+  display: block;
+  width: 30px; height: 30px;
+  position: absolute;
+  top: -3px; left: -1px;
+  
+  /*manière dont activer/désact boite*/
+  cursor: pointer;
+  
+  opacity: 0; /*boite invisible*/
+  z-index: 2; /*boite au premier plan pour tjrs etre accessible*/
+}
+
+.tel input:checked ~ ul
+{
+  transform: none;
+}
+
+.filtre_image{
+    position: sticky;
+    color: #F4AAA1;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.filtre_image a {color: #F4AAA1;}
+
+.filtre_deroule
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100vw; /*100% pour prendre la moitié de l'écran (nav parent 50% écran)*/
+  z-index: 1;
+
+  position: absolute;
+  margin: 0 0 0 -50px;
+  padding-bottom: 20px; padding-left: 50px; padding-top: 80px;
+  
+  background-color: rgba(0,9,26,0.9);;
+  list-style-type: none;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transform: translate(-100%, 0);
+
+}
+
+.toggle_filtres:checked ~ .choix_filtres_tel .filtre_deroule {
+    transform: none;
+  }
+
+.filtre_deroule li
+{
+  /*padding: 10px 0;*/
+  font-size: 1.2em;
+  font-family: Helvetica, sans-serif;
+}
+
+.filtre_deroule a {
+    color: #F4AAA1;
+}
+
+header {
+    z-index: 2;
+}
+ main {
+    z-index: 1;
+ }
+
+@media (max-width: 950px) {
+    .ordi {display: none;}
+
+}
+
+@media (min-width: 950px){
+    .tel {display: none;}
 }
