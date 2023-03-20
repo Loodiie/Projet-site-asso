@@ -126,3 +126,35 @@ h2{
     align-self: center;
 }
 
+/* Media queries pour les petits écrans */
+@media screen and (max-width: 950px) {
+    /* Réduire la taille des images dans les blocs */
+    .bloc1 img,
+    .bloc2 img,
+    .bloc3 img {
+      height: auto;
+    }
+    /* Mettre les blocs en colonne */
+    .horizontal {
+      flex-flow: column nowrap;
+    }
+    .column {
+      width: 90%;
+      margin-bottom: 2em;
+    }
+    /* Centrer le texte dans les blocs */
+    .column > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  /* Supprimer les effets hover */
+  .bloc1:hover .bloc1_hide,
+  .bloc2:hover .bloc2_hide,
+  .bloc3:hover .bloc3_hide {
+    display: block;
+  }
+
+
