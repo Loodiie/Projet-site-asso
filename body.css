@@ -16,9 +16,12 @@ body{
 
 main {flex: 1;}
 
+/*ne pas toucher : conflit avec le header sinon !*/ 
 h1{
-    color: white;
     font-family: Helvetica, sans-serif;
+}
+main h1{
+    color: white;
 }
   
 h2{
