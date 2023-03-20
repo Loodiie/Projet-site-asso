@@ -4,7 +4,6 @@
     margin: auto;
     margin-top: 2em;
     margin-bottom: 1em;
-    text-align: center;
     width: 100%;
     background-color: rgba(68, 57, 97, 0.90);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
@@ -14,7 +13,7 @@ h1 {
     text-align: center;
 }
 
-/* zone séparée en 2 avec à gauche les images et à droites le texte */
+/* zone séparée en 2 avec à gauche les images et à droite le texte */
 .horizontal{
     display:flex;
     flex-flow: row nowrap;
@@ -24,7 +23,7 @@ h1 {
     margin: 2em 0 2em 0em;
 }
 
-/* côté droit pour le text*/
+/*zone de texte dans le bloc de droite */ 
 .text{
     padding: 1em;
 }
@@ -33,86 +32,25 @@ h1 {
     text-align: left;
 }
 
-.img_activite {
+/*zone des photos dans le bloc de gauche qui s'appelle pictures*/
+.zone_pictures {
     display: flex;
-    flex-direction : column;
-    justify-content: center;
+    flex-direction : row;
     align-items: center;
-    margin: 0em 0.5em 0em 0em;
-    
 }
 
-.img_activite img{
+.pics img{
     width: 100%;
-    height: 50%;
+    width: 100%;
     margin: auto;
     margin-bottom: 0.5em;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.pictures {
+.pics {
     display: flex;
-    flex-direction: row;
+    width: 50%;
+    flex-direction: column;
+    margin: 0em 0.5em 0em 0em;
 }
 
-.zone_img img {flex: 1;}
-
-
-
-
-/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
-@media screen and (max-width: 950px) {
-    .horizontal {
-        flex-flow: column nowrap;
-    }
-
-    .img_activite {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-    }
-
-    #img_duo_1 {
-        order: 1;
-    }
-
-    #img_duo_2 {
-        order: 3;
-    }
-
-    .text {
-        order: 2;
-    }
-
-}
-
-
-/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
-@media screen and (max-width: 500px) {
-    .horizontal {
-        flex-flow: column nowrap;
-    }
-
-    .img_activite {
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-bottom: 1em;
-    }
-
-    #img_duo_1 {
-        order: 1;
-    }
-
-    #img_duo_2 {
-        order: 3;
-    }
-
-    .text {
-        order: 2;
-    }
-
-}
