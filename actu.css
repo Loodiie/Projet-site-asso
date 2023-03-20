@@ -94,71 +94,81 @@
 
 /* Pour les écrans de taille inférieure ou égale à 500px */
 @media screen and (max-width: 950px) {
-  
+
     /* Redimensionner les images */
-    .img_article1 img, .img_article2 img {
-      width: 100%;
-      height: auto;
+    .img_article1 img,
+    .img_article2 img {
+        width: 100%;
+        height: auto;
     }
-  
+
     /* Inverser l'ordre des éléments .img_alaune et .text dans .horizontal */
     .horizontal {
         flex-direction: column;
-      }
-    
-      .horizontal img {
+    }
+
+    .horizontal img {
         width: 100%;
         height: auto;
         margin-bottom: 1em;
-      }
-    
-      .horizontal .lireplus {
-        margin-top: 1em;
-      }
-    
-      .horizontal .lireplus nav {
-        text-align: center;
-      }
+    }
 
-      .horizontal .lireplus img {
+    .horizontal .lireplus {
+        margin-top: 1em;
+    }
+
+    .horizontal .lireplus nav {
+        text-align: center;
+    }
+
+    .horizontal .lireplus img {
         width: 12%;
-      }
+    }
+    a {
+        display: flex;
+        justify-content: center;
+    }
 
     .img_alaune {
-      order: 2;
-      margin-top: 1em;
+        order: 2;
+        margin-top: 1em;
     }
+
     .text {
-      order: 1;
+        order: 1;
     }
-  
+
     /* Inverser l'ordre des éléments .img_article1 et .text dans .article1 */
     .article1 {
-      flex-flow: column nowrap;
-      align-items: center;
+        flex-flow: column nowrap;
+        align-items: center;
     }
+
     .img_article1 {
-      order: 2;
-      margin-top: 1em;
+        order: 2;
+        margin-top: 1em;
     }
+
     .text {
-      order: 1;
+        order: 1;
     }
-  
+
     /* Inverser l'ordre des éléments .img_article2 et .text dans .article2 */
     .article2 {
-      flex-flow: column nowrap;
-      align-items: center;
+        flex-flow: column nowrap;
+        align-items: center;
     }
+
     .img_article2 {
-      order: 1;
-      margin-top: 1em;
+        order: 1;
+        margin-top: 1em;
     }
+
     .text {
-      order: 2;
+        order: 2;
     }
-  
-  }
+
+}
 
 
 
