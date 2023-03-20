@@ -37,3 +37,27 @@
     width: 8em;
     margin: 0.25em 0.5em 0em 0.5em; 
 }
+
+/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
+@media screen and (max-width: 950px) {
+    .horizontal {
+      flex-flow: column nowrap;
+    }
+
+    .pics1 {order:2}
+    .pics2{order: 2;}
+    .zone_text {order: 1;}
+
+    .pics1 img, .pics2 img{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
