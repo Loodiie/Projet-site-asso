@@ -4,33 +4,37 @@
 <html lang="fr">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        
-        <link rel="stylesheet" href="header_footer/header_footer.css"> 
-        <script src="header_footer/header_anim.js" defer="defer"></script> 
-        <script src="https://kit.fontawesome.com/d93ad3eb56.js" crossorigin="anonymous"></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no"> <!--Pour que la responsivité s'active quand on inspecte (F12)-->
+        <link rel="stylesheet" href="header_footer/header_footer.css">
+        <script src="header_footer/header_anim.js" defer="defer"></script>
+        <script src="https://kit.fontawesome.com/d93ad3eb56.js"
+            crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="projets.css">
         <link rel="stylesheet" href="body.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">  <!--pour la typo google font Raleway-->
-       
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap"
+            rel="stylesheet"> <!--pour la typo google font Raleway-->
+
     </head>
     <body>
-        <header class=""> 
-            <nav class="nav_ordi"> 
+        <header class="">
+            <nav class="nav_ordi">
                 <section class="menu_gauche">
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="accueil.html">
                             <h1>Accueil</h1>
                         </a>
                     </div>
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="qui_sommes_nous.html">
                             <h1>Qui sommes-nous ?</h1>
                         </a>
                     </div>
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="activites.html">
                             <h1>Activités</h1>
                         </a>
@@ -42,42 +46,41 @@
                     </a>
                 </section>
                 <section class="menu_droite">
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="projets.html">
                             <h1>Projets</h1>
                         </a>
                     </div>
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="actu.html">
                             <h1>Actualités</h1>
                         </a>
                     </div>
-                    <div class="menu_bouton"> 
+                    <div class="menu_bouton">
                         <a href="galerie.html">
                             <h1>Galerie</h1>
                         </a>
                     </div>
                 </section>
             </nav>
-        
-            <nav class="nav_tel"> 
+
+            <nav class="nav_tel">
                 <section class="menu_gauche">
                     <div class="burger">
                         <!-- class="menu_bouton" -->
                         <input type="checkbox" /> <!-- A fake / hidden checkbox is used as click reciever,so you can use the :checked selector on it.-->
-                        
-                        
                         <span></span> <!-- Some spans to act as a hamburger -->
                         <span></span>
                         <span></span>
-                        
-                        
+
+
                         <ul class="menu_deroule">
                             <div class="menu_bouton">
                                 <a href="accueil.html"><li>Accueil</li></a>
                             </div>
                             <div class="menu_bouton">
-                                <a href="qui_sommes_nous.html"><li>Qui sommes nous ?</li></a>
+                                <a href="qui_sommes_nous.html"><li>Qui sommes
+                                        nous ?</li></a>
                             </div>
                             <div class="menu_bouton">
                                 <a href="activites.html"><li>Activités</li></a>
@@ -98,7 +101,7 @@
                     </div>
                 </section>
                 <section class="logo">
-                    <a href="#">
+                    <a href="accueil.html">
                         <img src="header_footer/assets/logocto_final.png">
                     </a>
                 </section>
@@ -112,19 +115,20 @@
                 </section>
             </nav>
         </header>
-    
-<main>
+
+        <main>
             <section class="vertical">
                 <!-- Barre des filtres -->
                 <div class="ordi">
                     <nav class="choix_filtres_ordi">
                         <ul class="filtre">
-                            <li class="style_filtre"><a href="filtres">Tous</a></li>
-                            <li class="style_filtre"><a href="filtres">Events</a></li>
-                            <li class="style_filtre"><a href="filtres">Électronique</a></li>
-                            <li class="style_filtre"><a href="filtres">Mécanique</a></li>
-                            <li class="style_filtre"><a href="filtres">Programmation</a></li>
-                            <li class="style_filtre"><a href="filtres">3D</a></li>
+                            <button class="style_filtre" data-tag="tout">Tout</button>
+                            <button class="style_filtre" data-tag="events">Events</button> 
+                            <button class="style_filtre" data-tag="electronique">Électronique</button>
+                            <button class="style_filtre" data-tag="mecanique">Mécanique</button>
+                            <button class="style_filtre" data-tag="programmation">Programmation</button> 
+                            <button class="style_filtre" data-tag="3D">3D</button>    
+   
                         </ul>
                     </nav>
                 </div>
@@ -140,12 +144,12 @@
 
                     <nav class="choix_filtres_tel">
                         <ul class="filtre_deroule">
-                            <li class="style_filtre"><a href="filtres">Tous</a></li>
-                            <li class="style_filtre"><a href="filtres">Events</a></li>
-                            <li class="style_filtre"><a href="filtres">Électronique</a></li>
-                            <li class="style_filtre"><a href="filtres">Mécanique</a></li>
-                            <li class="style_filtre"><a href="filtres">Programmation</a></li>
-                            <li class="style_filtre"><a href="filtres">3D</a></li>
+                            <button class="style_filtre" data-tag="tout">Tout</button>
+                            <button class="style_filtre" data-tag="events">Events</button> 
+                            <button class="style_filtre" data-tag="electronique">Électronique</button>
+                            <button class="style_filtre" data-tag="mecanique">Mécanique</button>
+                            <button class="style_filtre" data-tag="programmation">Programmation</button> 
+                            <button class="style_filtre" data-tag="3D">3D</button> 
                         </ul>
                     </nav>
                 </div>
@@ -154,7 +158,7 @@
 
                 <div class="trois_blocks">
 
-                    <div class="images_projet">
+                    <div class="images_projet tout events electronique">
                         <img src="img/image_carrousel.png" alt="image 1">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -165,7 +169,7 @@
                         </div>
 
                     </div>
-                    <div class="images_projet">
+                    <div class="images_projet tout events mecanique">
                         <img src="img/image_carrousel2.png" alt="image 2">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -176,7 +180,7 @@
                         </div>
                     </div>
 
-                    <div class="images_projet">
+                    <div class="images_projet tout events programmation">
                         <img src="img/image_carrousel3.png" alt="image 3">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -190,7 +194,7 @@
 
                 <div class="trois_blocks">
 
-                    <div class="images_projet">
+                    <div class="images_projet tout programmation">
                         <img src="img/image_carrousel4.png" alt="image 4">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -201,7 +205,7 @@
                         </div>
                     </div>
 
-                    <div class="images_projet">
+                    <div class="images_projet tout 3D">
                         <img src="img/image_carrousel5.png" alt="image 5">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -212,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="images_projet">
+                    <div class="images_projet tout events 3D">
                         <img src="img/image_carrousel6.png" alt="image 6">
                         <div class="text">
                             <h3>Nom du projet</h3>
@@ -226,43 +230,46 @@
             </section>
         </main>
 
-    <footer> 
-            <nav class="nav_ordi"> 
-                <div class="menu_bouton"> 
+        <footer>
+            <nav class="nav_ordi">
+                <div class="menu_bouton">
                     <a href="contact.html">
                         <h1>Contact</h1>
                     </a>
                 </div>
-                <div class="menu_bouton"> 
+                <div class="menu_bouton">
                     <a href="partenariat.html">
                         <h1>Partenaires</h1>
                     </a>
                 </div>
-                <div class="menu_bouton"> 
+                <div class="menu_bouton">
                     <a href="charte.html">
                         <h1>Charte</h1>
                     </a>
                 </div>
-                <div class="menu_bouton"> 
+                <div class="menu_bouton">
                     <a href="mentions_legales.html">
                         <h1>Mentions légales</h1>
                     </a>
                 </div>
             </nav>
-            
-            <nav class="nav_tel"> 
-                <div class="menu_bouton"> 
+
+            <nav class="nav_tel">
+                <div class="menu_bouton">
                     <a href="charte.html">
                         <h1>Charte</h1>
                     </a>
                 </div>
-                <div class="menu_bouton"> 
+                <div class="menu_bouton">
                     <a href="mentions_legales.html">
                         <h1>Mentions légales</h1>
                     </a>
                 </div>
             </nav>
         </footer>
+
+        <script src="projets.js"></script>
+
     </body>
 
 
