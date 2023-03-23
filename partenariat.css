@@ -61,3 +61,18 @@
     padding-left: 1em;
 }
 
+
+@media screen and (max-width: 750px) {
+    #parrainage,
+    .partnr1,
+    .partnr2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column; 
+    }
+
+}
+
+
+
