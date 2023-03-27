@@ -1,0 +1,128 @@
+@media (max-width: 950px){
+  .contact div, .message div {
+    margin-top: 10px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form, .localisation {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  margin: 50px 0px;
+  padding: 15px;
+
+  background-color: #443961;
+}
+
+.contenu div, .contenu iframe {
+  display: flex;
+}
+
+.titre {
+  display: flex;
+  justify-content: start;
+
+  width: 100%;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  flex: 1;
+  
+  padding: 10px;
+}
+
+.localisation .contenu {width: 100%;}
+
+iframe {flex: 1;}
+
+.coordo {
+  display: flex;
+  justify-content: start;
+  padding: 10px 0;  
+}
+
+.adresse {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+.adresse p, .adresse a {
+  color: black;
+  text-decoration: none;
+  margin:4px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.adresse a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main .logo {
+  max-width: 150px;
+}
+
+main .logo img {
+  width: 100%;
+  background-color: yellow;
+  border-radius: 5px 0 0 5px;
+}
+
+.message, .contact, .bouton {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.message, .contact {justify-content: space-evenly;}
+
+.message_objet input, .message_contenu textarea {
+  width: 100%;
+}
+
+.message_contenu {
+  margin-top: 10px;
+  flex: 1;
+}
+
+form .bouton {
+  align-self: flex-end;
+  margin: 20px 5px;
+}
+
+input, textarea, button {
+  border-style: none;
+  /*appearance: none;*/
+  border-radius: 2px;
+  padding: 5px 4px;
+}
+input, textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+
+button {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f4aaa1; 
+  font-weight: bold;
+}
+
+.bouton :hover {
+  background-color: tomato;
+}

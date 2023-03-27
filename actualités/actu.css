@@ -1,0 +1,179 @@
+.vertical {
+    display: flex;  
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: rgba(68, 57, 97, 0.70);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 3em;
+}
+
+.title {
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+}
+
+
+.horizontal{
+    display:flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 95%;
+}
+
+.horizontal img {
+    width: 30em;
+    height: 20em;
+}
+
+.articles {
+    display:flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: rgb(68,57,97, 0.70);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.articles img {
+    width: 20em;
+    height: 15em;
+}
+
+.article1{
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 1em;
+    width: 95%;
+
+}
+
+.article2{
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    display:flex;
+    flex-flow: row nowrap;
+    padding: 1em;
+    margin-top: 1em;
+    width: 95%;
+}
+
+.pics1{
+    width: 100%;
+    padding: auto;
+}
+
+.text h2 {
+    text-align: start;
+}
+
+.text {
+    width: 95%;
+    padding-left: 1em;
+}
+   
+.lireplus img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.lireplus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Pour les écrans de taille inférieure ou égale à 500px */
+@media screen and (max-width: 950px) {
+
+    /* Redimensionner les images */
+    .img_article1 img,
+    .img_article2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Inverser l'ordre des éléments .img_alaune et .text dans .horizontal */
+    .horizontal {
+        flex-direction: column;
+    }
+
+    .horizontal img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+
+    .horizontal .lireplus {
+        margin-top: 1em;
+    }
+
+    .horizontal .lireplus nav {
+        text-align: center;
+    }
+
+    .horizontal .lireplus img {
+        width: 12%;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_alaune {
+        order: 2;
+        margin-top: 1em;
+    }
+
+    .text {
+        order: 1;
+    }
+
+    /* Inverser l'ordre des éléments .img_article1 et .text dans .article1 */
+    .article1 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .img_article1 {
+        order: 2;
+        margin-top: 1em;
+    }
+
+    .text {
+        order: 1;
+    }
+
+    /* Inverser l'ordre des éléments .img_article2 et .text dans .article2 */
+    .article2 {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .img_article2 {
+        order: 1;
+        margin-top: 1em;
+    }
+
+    .text {
+        order: 2;
+    }
+
+}
+
+
+
+
+
+
+    
+    

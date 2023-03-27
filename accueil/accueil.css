@@ -1,0 +1,63 @@
+/*page css pour les body de Accueil */
+
+.vertical {
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.horizontal{
+    display:flex;
+    flex-flow: row nowrap;
+    background-color: rgb(68,57,97);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin: 3% 0 3%;
+    width: 95%;
+}
+
+.zone_text {
+    width: 95%;
+    padding: 1em;
+}
+
+.sponsors{
+    display:flex;
+    flex-flow: row nowrap;
+    background-color: rgb(68,57,97,0.70);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
+    padding: 0.5% 40% 0.5% 40% ;
+    margin: 3% 0% 3% 0% ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sponso img{
+    width: 8em;
+    margin: 0.25em 0.5em 0em 0.5em; 
+}
+
+/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
+@media screen and (max-width: 950px) {
+    .horizontal {
+      flex-flow: column nowrap;
+    }
+
+    .pics1 {order:2}
+    .pics2{order: 2;}
+    .zone_text {order: 1;}
+
+    .pics1 img, .pics2 img{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sponsors{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
