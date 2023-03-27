@@ -4,7 +4,7 @@ html, body {height: 100%;}
 body{
     margin: 0; padding: 0;
     background-color:#00091A;
-    background-image: url("/img/background_img.png");
+    background-image: url("../img/background_img.png");
 
     /*Effet Parallax */
     height: 100%;                       /*Prendra 100% de la hauteur du viewport, et donc de l'écran */

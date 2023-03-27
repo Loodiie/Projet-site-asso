@@ -56,8 +56,7 @@
     }
 
     .sponsors{
-        display: flex;
-        flex-wrap: wrap;
+        display: none;
     }
     
 }
