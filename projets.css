@@ -6,14 +6,24 @@
 }
 
 .style_filtre {
+    display: inline-block;
+    list-style-type: none;
     background-color: #968B93;
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
-    color: white;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     margin-right: 10px;
     cursor: pointer;
-  }
+    border-style: none;
+    font-weight: bold;
+}
+
+/* pour ajouter un effet de style quand la souris passe au dessus des boutons de filtre */
+.style_filtre:hover,
+.style_filtre:focus {
+  transform: translateY(-0.25em);
+}
 
 .filtre {
     display: flex;
@@ -21,17 +31,10 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: white;
 }
-
-.style_filtre {
-    display: inline-block;
-    list-style-type: none;
-}
-
 
 .vertical {
-    background-color: rgb(68, 57, 97);
+    background-color: rgba(68, 57, 97, 0.90);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding-top: 1em;
     margin-top: 1em;
@@ -44,7 +47,6 @@
     flex-wrap: wrap;
     margin-top: 2em;
     margin-bottom: 1em;
-
 }
 
 .trois_blocks img {
