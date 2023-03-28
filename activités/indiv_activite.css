@@ -73,6 +73,7 @@ h1 {
         height: 15em;
     }
 
+    /* ordre d'affichage des éléments pour qu'ils s'affichent à la suite mais dans un ordre précis */
     #img_duo_1 {
         order: 1;
     }
@@ -88,7 +89,7 @@ h1 {
 }
 
 
-/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
+/* responsivité pour un plus petit écran encore */
 @media screen and (max-width: 500px) {
     .horizontal {
         flex-flow: column nowrap;

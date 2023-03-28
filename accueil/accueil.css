@@ -1,11 +1,13 @@
 /*page css pour les body de Accueil */
 
+/* concerne la répartition des blocs dans la page --> en vertical */
 .vertical {
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+/* =======================  blocs avec texte + photos ====================== */
 .horizontal{
     display:flex;
     flex-flow: row nowrap;
@@ -21,10 +23,11 @@
     padding: 1em;
 }
 
+/* =================   pour le bandeau des sponsors en bas de page ============================== */
 .sponsors{
     display:flex;
     flex-flow: row nowrap;
-    background-color: rgb(68,57,97,0.70);
+    background-color: rgb(68,57,97,0.70); /* le rgba dans le background color permet de mettre un paramètre en plus dans la couleur pour modifier l'opacité/la transparance d'un fond */
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding: 0.5% 40% 0.5% 40% ;
     margin: 3% 0% 3% 0% ;
@@ -38,13 +41,13 @@
     margin: 0.25em 0.5em 0em 0.5em; 
 }
 
-/* Affichage des deux images côte à côte sur un écran dont la largeur maximale est de 950px */
+/* Pour la responsivité */
 @media screen and (max-width: 950px) {
     .horizontal {
-      flex-flow: column nowrap;
+      flex-flow: column nowrap;    /* les images se mettent en dessous du texte en dessous d'une certaine taille d'écran */
     }
 
-    .pics1 {order:2}
+    .pics1 {order:2}        /* ordre pour l'affichage des images quand l'écrane est en mode téléphone */
     .pics2{order: 2;}
     .zone_text {order: 1;}
 
@@ -55,7 +58,7 @@
         height: auto;
     }
 
-    .sponsors{
+    .sponsors{   /* le bandeau des sponsors disparait quand on met le site sur un écran de téléphone */
         display: none;
     }
     

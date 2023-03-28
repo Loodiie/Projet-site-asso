@@ -95,7 +95,7 @@
 }
 
 
-/* Responsivité pour les écrans de taille inférieure ou égale à 500px */
+/* Responsivité pour les écrans de taille inférieure */
 @media screen and (max-width: 950px) {
 
     /* Redimensionner les images */

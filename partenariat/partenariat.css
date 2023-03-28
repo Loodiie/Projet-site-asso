@@ -16,6 +16,7 @@
     font-size: 3em;
 }
 
+/* ========== style pour le bloc Parrain ========== */
 #parrainage {
     display:flex;
     flex-flow: row nowrap;
@@ -30,6 +31,7 @@
     width: 100%;
 }
 
+/* ============ style pour le bloc sponsors =========== */
 .partenariats {
     display:flex;
     flex-flow: column nowrap;
@@ -61,7 +63,7 @@
     padding-left: 1em;
 }
 
-
+/* pour la responsivité */
 @media screen and (max-width: 750px) {
     #parrainage,
     .partnr1,

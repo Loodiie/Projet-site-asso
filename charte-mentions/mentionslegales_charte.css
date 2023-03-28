@@ -25,6 +25,7 @@
     text-align: left;
 }
 
+/*Pour la responsivité */
 @media (max-width: 500px) {
     .vertical {
     width: 95%;

@@ -1,6 +1,7 @@
+/* style pour le bloc d'intro */
 .intro{
     width: 75%;
-    background-color:rgba(68,57,97,0.90);
+    background-color:rgba(68,57,97,0.90); 
     display: block;
     content: center;
     margin: auto;
@@ -16,6 +17,8 @@ h1 {
 p{
     text-align: center;
 }
+
+/* pour la gestion des colonnes (les 3 blocs côtes à côtes) */
 
 .horizontal{
     display:flex;
@@ -53,13 +56,13 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     padding: 2.5%;
-    display:none;
+    display:none;    /* fonction pour que le bloc1_hide ne soit pas automatiquement affiché */
 }
 
-.bloc1:hover + .bloc1_hide{
+.bloc1:hover + .bloc1_hide{    /* pour faire apparaitre le bloc1_hide quand la souris passe sur le bloc 1 */
     display:block;
 }
-.bloc1_hide:hover{
+.bloc1_hide:hover{   /* pour que le bloc1_hide reste affiché quand la souris se trouve dessus pour pouvoir accéder au "lire plus" */
     display:block;
 }
 
@@ -72,19 +75,19 @@ h2{
     height: 12em;
 }
 
-.bloc2_hide{
+.bloc2_hide{   
     background-color: #443961;
     margin: auto;
     flex-direction: row;
     justify-content: space-between;
     padding: 2.5%;
-    display:none;
+    display:none;      /* fonction pour que le bloc2_hide ne soit pas automatiquement affiché */
 }
 
-.bloc2:hover + .bloc2_hide{
+.bloc2:hover + .bloc2_hide{ /* pour faire apparaitre le bloc2_hide quand la souris passe sur le bloc 2 */
     display:block;
 }
-.bloc2_hide:hover{
+.bloc2_hide:hover{      /* pour que le bloc2_hide reste affiché quand la souris se trouve dessus pour pouvoir accéder au "lire plus" */
     display:block;
 }
 
@@ -104,13 +107,13 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     padding: 2.5%;
-    display:none;
+    display:none;    /* fonction pour que le bloc3_hide ne soit pas automatiquement affiché */
 }
 
-.bloc3:hover + .bloc3_hide{
+.bloc3:hover + .bloc3_hide{  /* pour faire apparaitre le bloc2_hide quand la souris passe sur le bloc 2 */
     display:block;
 }
-.bloc3_hide:hover{
+.bloc3_hide:hover{    /* pour que le bloc3_hide reste affiché quand la souris se trouve dessus pour pouvoir accéder au "lire plus" */
     display:block;
 }
 
