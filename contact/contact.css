@@ -1,3 +1,4 @@
+/*responsivité*/
 @media (max-width: 950px){
   .contact div, .message div {
     margin-top: 10px;
@@ -10,6 +11,7 @@ main {
   flex-wrap: wrap;
 }
 
+/*organisation générale de la page*/
 form, .localisation {
   display: flex;
   flex-direction: column;
@@ -21,17 +23,16 @@ form, .localisation {
   background-color: #443961;
 }
 
+/*agencement des 2 boites principales en miroir*/
 .contenu div, .contenu iframe {
   display: flex;
 }
-
 .titre {
   display: flex;
   justify-content: start;
 
   width: 100%;
 }
-
 .contenu {
   display: flex;
   flex-direction: column;
@@ -41,17 +42,17 @@ form, .localisation {
   
   padding: 10px;
 }
-
 .localisation .contenu {width: 100%;}
 
+/*taille de la mini-map*/
 iframe {flex: 1;}
 
+/*carré avec coordo + logo CESI*/
 .coordo {
   display: flex;
   justify-content: start;
   padding: 10px 0;  
 }
-
 .adresse {
   display: flex;
   flex-direction: column;
@@ -65,7 +66,6 @@ iframe {flex: 1;}
   margin:4px 0;
   font-family: 'Raleway', sans-serif;
 }
-
 .adresse a {
   text-decoration: none;
   color: black;
@@ -73,38 +73,36 @@ iframe {flex: 1;}
   text-decoration: underline;
 }
 
+/*taille du logo CESI*/
 main .logo {
   max-width: 150px;
 }
-
 main .logo img {
   width: 100%;
   background-color: yellow;
   border-radius: 5px 0 0 5px;
 }
 
+/*organisation des divisions du formulaire*/
 .message, .contact, .bouton {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
 .message, .contact {justify-content: space-evenly;}
-
 .message_objet input, .message_contenu textarea {
   width: 100%;
 }
-
 .message_contenu {
   margin-top: 10px;
   flex: 1;
 }
-
 form .bouton {
   align-self: flex-end;
   margin: 20px 5px;
 }
 
+/*esthétique zones d'input du formulaire*/
 input, textarea, button {
   border-style: none;
   /*appearance: none;*/
@@ -116,6 +114,7 @@ input, textarea {
   font-size: 0.9em;
 }
 
+/*esthétique bouton envoi du formulaire*/
 button {
   padding: 15px;
   border-radius: 5px;
@@ -123,6 +122,7 @@ button {
   font-weight: bold;
 }
 
+/*changement couleur du bouton d'envoi du formulaire au survol*/
 .bouton :hover {
   background-color: tomato;
 }
