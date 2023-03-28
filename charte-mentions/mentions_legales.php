@@ -31,7 +31,7 @@
                     </br> Propriétaire : Club de Robotique du CESI Brest</br>
                     Adresse: 230 Rue Rolland Garros, 29490 Guipavas</br>
                     
-                    </br>Fondatrices et réalisatrices du site internet : LE GOUYEN Elody / BOISSARD Justine / POOGEON Maewenn </br>
+                    </br>Fondatrices et réalisatrices du site internet : LE GOUYEN Elody / BOISSARD Justine / PORGEON Maewenn </br>
 
                     </br>2. Présentation :</br>
                     </br>Tout internaute se connectant et utilisant le site suivant : ENTRER L’URL est considéré comme utilisateur du site suivant.
@@ -61,11 +61,13 @@
                     Aucune information personnelle de l'utilisateur du site n'est publiée sans consentement de l'utilisateur, troquée, transmise, vendue sur n'importe quel support à des tiers. Uniquement l'hypothèse de la vente du site interne et de ses droits autorise aux Girl Power Robot à céder les informations à l'éventuel acquéreur qui serait lui-même tenu à la même nécessité de conservation et de modification des informations vis-à -vis de l'utilisateur du site interne.
                     Le site internet est conforme avec le RGPD.</br>
 
-                    </br>7. Utilisation d’image libre de droit : </br>
+                    </br>7. Utilisation d’images libres de droit : </br>
 
                     </br>Pour l’image de fond (robot qui lit) : 
                     lien de téléchargement de l’image (qui ne semble plus disponible sur le site : https://wallpaperaccess.com/full/6870274.png )
-                    source : https://wallpaperaccess.com/ 
+                    source : https://wallpaperaccess.com/.
+                    
+                    </br>Les photos ont été réalisées par Maewenn PORGEON, membre fondatrice et réalisatrice du site. 
                 </p>
             </div>
         </main>
