@@ -64,7 +64,7 @@
           'slide_images_principal', 0)">&#10094;</a>
         <div class="slide_carrousel_principal">
           <div class="slide_images_principal">
-            <img src="../img/2023-03-20 at 09.00.25.jpeg" alt="image 1">
+            <img src="../img/image_carrousel.png" alt="image 1">
           </div>
           <div class="slide_images_principal">
             <img src="../img/image_carrousel2.png" alt="image 2">

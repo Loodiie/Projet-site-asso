@@ -41,10 +41,6 @@
   align-items: center;
 }
 
-.carrousel_principal img {
-  width: 500px;
-}
-
 .principal_carrousel-prev,
 .principal_carrousel-next {
   margin: 1em;
