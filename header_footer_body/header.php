@@ -98,9 +98,9 @@
 
         <section class="menu_droite">
             <!-- class="loupe" -->
-            <div class="loupe" class="menu_bouton">
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="cesi" class="menu_bouton">
+                <a href="https://brest.cesi.fr/">
+                <img src="https://www.capitainestudy.fr/wp-content/uploads/2019/02/cesi_RVB.png">
                 </a>
             </div>
         </section>

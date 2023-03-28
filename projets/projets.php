@@ -59,6 +59,8 @@
                     </nav>
                 </div>
 
+
+                      <!-- Ce block permet de mettre les images des projets -->
                 <div class="trois_blocks">
 
                     <div class="images_projet tout events electronique">
@@ -94,6 +96,9 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- Ce block permet de mettre les images des projets -->
 
                 <div class="trois_blocks">
 

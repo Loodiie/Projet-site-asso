@@ -110,6 +110,8 @@ p {
 }
 
 
+/*Responsivité*/
+
 @media screen and (max-width: 790px) {
 
   .vertical {

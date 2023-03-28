@@ -24,6 +24,7 @@
 
         <main>
 
+           <!-- Ce block permet de mettre en place l'artivle principal--> 
             <section class="vertical">
                 <h1 class="title">A la une</h1>
 
@@ -68,6 +69,9 @@
                     </div>
                 </div>
             </section>
+
+
+            <!-- Ce block permet de mettre en place les articles secondaires--> 
 
             <section class="articles">
 

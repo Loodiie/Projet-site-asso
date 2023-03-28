@@ -58,7 +58,7 @@
       </section>
 
 
-
+    <!-- ce block permet de gerer le carrousel principal -->
       <div class="carrousel_principal tout">
         <a class="principal_carrousel-prev" onclick="plusSlides(-1,
           'slide_images_principal', 0)">&#10094;</a>
@@ -86,7 +86,7 @@
           'slide_images_principal', 0)">&#10095;</a>
       </div>
 
-
+    <!-- ce block permet de gerer la 1ère partie des carrousels secondaire -->
       <div class="trois_blocks">
 
         <div class="carrousel_secondaire 3D projets tout">
@@ -166,7 +166,7 @@
       </div>
 
 
-
+    <!-- ce block permet de gerer la 2ème partie des carrousels secondaire -->
       <div class="trois_blocks">
 
         <div class="carrousel_secondaire filtre tout">

@@ -29,6 +29,8 @@
     margin-bottom: 1em;
 }
 
+/*Permet de mettre le style pour les images*/
+
 .img_article {
     display: flex;
     flex-direction : column;

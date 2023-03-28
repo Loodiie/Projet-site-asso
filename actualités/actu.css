@@ -1,5 +1,5 @@
 .vertical {
-    display: flex;  
+    display: flex;
     align-items: center;
     flex-flow: column nowrap;
     background-color: rgba(68, 57, 97, 0.70);
@@ -8,17 +8,17 @@
 }
 
 .title {
-        display: flex;
-        justify-content: center;
-        font-size: 3em;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
 }
 
 
-.horizontal{
-    display:flex;
+.horizontal {
+    display: flex;
     justify-content: center;
     flex-flow: row nowrap;
-    background-color: rgb(68,57,97);
+    background-color: rgb(68, 57, 97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding: 1em;
     margin-bottom: 1em;
@@ -30,11 +30,12 @@
     height: 20em;
 }
 
+/*Permet de mettre le style pour l'article principal*/
 .articles {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    background-color: rgb(68,57,97, 0.70);
+    background-color: rgb(68, 57, 97, 0.70);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
     padding: 1em;
     margin-bottom: 3em;
@@ -46,27 +47,28 @@
     height: 15em;
 }
 
-.article1{
-    background-color: rgb(68,57,97);
+/*Permet de mettre le style pour les articles secondaires*/
+.article1 {
+    background-color: rgb(68, 57, 97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     padding: 1em;
     width: 95%;
 
 }
 
-.article2{
-    background-color: rgb(68,57,97);
+.article2 {
+    background-color: rgb(68, 57, 97);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     padding: 1em;
     margin-top: 1em;
     width: 95%;
 }
 
-.pics1{
+.pics1 {
     width: 100%;
     padding: auto;
 }
@@ -79,7 +81,8 @@
     width: 95%;
     padding-left: 1em;
 }
-   
+
+/*permet de gerer le style de l'image qui sert de lien*/
 .lireplus img {
     width: 1.5em;
     height: 1.5em;
@@ -92,7 +95,7 @@
 }
 
 
-/* Pour les écrans de taille inférieure ou égale à 500px */
+/* Responsivité pour les écrans de taille inférieure ou égale à 500px */
 @media screen and (max-width: 950px) {
 
     /* Redimensionner les images */
@@ -124,6 +127,7 @@
     .horizontal .lireplus img {
         width: 12%;
     }
+
     a {
         display: flex;
         justify-content: center;
@@ -169,11 +173,3 @@
     }
 
 }
-
-
-
-
-
-
-    
-    
