@@ -28,17 +28,17 @@
                         <div class="contact_info">
                             <label for="name"></label>
                             <input type="text" id="name" name="user_name" 
-                                value="Votre nom"
-                                onfocus="if (this.value== this.defaultValue) this.value=''"
-                                onblur="if (this.value== '') this.value='Votre nom'">
+                                placeholder="Votre nom">
+                                <!--onfocus="if (this.value== this.defaultValue) this.value=''"
+                                onblur="if (this.value== '') this.value='Votre nom'"-->
                         </div>
 
                         <div class="contact_info">
                             <label for="email"></label>
-                            <input type="mail" id="email" name="user_email" 
-                                value="Votre mail"
-                                onfocus="if (this.value== this.defaultValue) this.value=''"
-                                onblur="if (this.value== '') this.value='Votre mail'">
+                            <input type="email" id="email" name="user_email" 
+                                placeholder="Votre mail">
+                                <!--onfocus="if (this.value== this.defaultValue) this.value=''"
+                                onblur="if (this.value== '') this.value='Votre mail'"-->
                         </div>
                     </div>
 
@@ -46,18 +46,14 @@
                         <div class="message_objet">
                             <label for="objet"></label>
                             <input type="text" id="objet" name="user_objet" 
-                                value="Objet du message"
-                                onfocus="if (this.value== this.defaultValue) this.value=''" 
-                                onblur="if (this.value== '') this.value='Objet du message'">
+                                placeholder="Objet du message">
+                               <!-- onfocus="if (this.value== this.defaultValue) this.value=''" 
+                                onblur="if (this.value== '') this.value='Objet du message'"-->
                         </div>
 
                         <div class="message_contenu">  
                             <label for="message"></label>
-                            <textarea id="message" name="user_message"
-                                value="Tapez votre message ici"
-                                onfocus="if (this.value== this.defaultValue) this.value=''"
-                                onblur="if (this.value== '') this.value='Tapez votre message ici'">Tapez votre message ici
-                            </textarea>
+                            <textarea type="text" id="message" name="user_message" placeholder="Tapez votre message ici"></textarea>
                         </div>
                     </div>
 
